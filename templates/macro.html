@@ -1,71 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Macro View – Recycling in NYC</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <title>NYC Recycling Bins Macro View</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    svg text {
-      font-family: sans-serif;
+    svg path {
+      stroke: #444;
+      stroke-width: 1;
+      transition: fill 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* Default fill, gets overridden by JS */
+    #Brooklyn, #Manhattan, #Queens, #The_Bronx, #Staten_Island {
+      fill: hsl(270, 100%, 75%);
+    }
+
+    .legend-box {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 8px;
+      vertical-align: middle;
     }
   </style>
 </head>
-<body class="p-4">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">NYC Recycling Project</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link active" href="/macro">Macro View</a></li>
-          <li class="nav-item"><a class="nav-link" href="/borough/BKN">Brooklyn</a></li>
-          <li class="nav-item"><a class="nav-link" href="/borough/BX">Bronx</a></li>
-          <li class="nav-item"><a class="nav-link" href="/borough/MAN">Manhattan</a></li>
-          <li class="nav-item"><a class="nav-link" href="/borough/QE">Queens</a></li>
-          <li class="nav-item"><a class="nav-link" href="/borough/SI">Staten Island</a></li>
-        </ul>
-      </div>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center mb-3">NYC Recycling Bins by Borough</h2>
+
+    <form id="binSelector" class="mb-4 text-center">
+      <label for="binType" class="form-label me-2">Select Bin Type:</label>
+      <select id="binType" name="binType" class="form-select d-inline-block w-auto">
+        <option value="Both">Both</option>
+        <option value="MGP">Metal, Glass, Plastic (MGP)</option>
+        <option value="Paper">Paper</option>
+      </select>
+    </form>
+
+    <!-- SVG MAP -->
+    <div id="mapContainer" class="text-center">
+      <object id="nycMap" type="image/svg+xml" data="{{ url_for('static', filename='NY_Boroughs.svg') }}" width="700" height="560">
+        Your browser does not support SVG
+      </object>
     </div>
-  </nav>
 
-  <h1>Total Recycling Bins by Borough</h1>
-
-  <svg width="700" height="300">
-  {% for item in data %}
-    <rect 
-      x="{{ loop.index0 * 100 + 40 }}" 
-      y="{{ 280 - item['total_bins'] * 2 }}" 
-      width="50" 
-      height="{{ item['total_bins'] * 2 }}" 
-      fill="seagreen" />
-    
-    <text 
-      x="{{ loop.index0 * 100 + 45 }}" 
-      y="295" 
-      font-size="10">
-      {{ item['borough'] }}
-    </text>
-
-    <text 
-      x="{{ loop.index0 * 100 + 40 }}" 
-      y="{{ 270 - item['total_bins'] * 2 }}" 
-      font-size="10" 
-      fill="black">
-      {{ item['total_bins'] }}
-    </text>
-  {% endfor %}
-  </svg>
-
-  <div class="mt-4">
-    <h3>Key Takeaways</h3>
-    <ul>
-      <li>Brooklyn and Manhattan have the highest number of recycling bins.</li>
-      <li>Queens and Staten Island show lower bin coverage relative to population density.</li>
-      <li>The Bronx shows diverse site types, but fewer bins overall.</li>
-    </ul>
+    <div class="mt-4">
+      <h3>Key Takeaways</h3>
+      <ul>
+        <li><strong>Brooklyn and Manhattan</strong> have the highest number of recycling bins overall.</li>
+        <li><strong>Queens and Staten Island</strong> have fewer bins relative to their population density.</li>
+        <li><strong>The Bronx</strong> shows diverse site types but fewer bins in total.</li>
+      </ul>
+    </div>
   </div>
 
-  <footer class="mt-5">
-    <p>Sources: NYC Open Data – DSNY Public Recycling Bins</p>
-    <p>Project by Sanaii Wilks</p>
-  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('nycMap').addEventListener('load', function () {
+      const svgDoc = this.contentDocument;
+      if (!svgDoc) return;
+
+      const binData = {
+        Brooklyn: { MGP: 150, Paper: 120, Both: 270 },
+        Manhattan: { MGP: 140, Paper: 130, Both: 270 },
+        Queens: { MGP: 80, Paper: 70, Both: 150 },
+        The_Bronx: { MGP: 60, Paper: 50, Both: 110 },
+        Staten_Island: { MGP: 40, Paper: 30, Both: 70 },
+      };
+
+      function updateMapColors(binType) {
+        const counts = Object.values(binData).map(d => d[binType]).filter(c => c != null);
+        const minCount = Math.min(...counts);
+        const maxCount = Math.max(...counts);
+
+        function interpolateColor(value) {
+          if (maxCount === minCount) return 'hsl(270, 100%, 55%)';
+          const ratio = (value - minCount) / (maxCount - minCount);
+          const lightness = 75 - ratio * 50; // light to dark purple
+          return `hsl(270, 100%, ${lightness}%)`;
+        }
+
+        for (const boroughId in binData) {
+          const group = svgDoc.getElementById(boroughId);
+          if (group) {
+            const count = binData[boroughId][binType];
+            if (count != null && count > 0) {
+              group.style.fill = interpolateColor(count);
+            } else {
+              group.style.fill = '#eee';
+            }
+          }
+        }
+      }
+
+      updateMapColors('Both');
+
+      document.getElementById('binType').addEventListener('change', function () {
+        updateMapColors(this.value);
+      });
+    });
+  </script>
 </body>
 </html>
+
+
+
