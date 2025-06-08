@@ -1,0 +1,884 @@
+[
+    {
+      "borough": "BKN",
+      "site_type": "CITY AGENCY",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "CITY AGENCY",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "CITY AGENCY",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "CITY AGENCY",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "SPORTS ARENA",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "SPORTS ARENA",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BKN",
+      "site_type": "CITY AGENCY",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "BKN",
+      "site_type": "PARK",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "BKN",
+      "site_type": "BID",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "BKN",
+      "site_type": "PARK",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "BKN",
+      "site_type": "NON-PROFIT",
+      "paper_bins": 4,
+      "mgp_bins": 4,
+      "total_bins": 8
+    },
+    {
+      "borough": "BKN",
+      "site_type": "ZOO",
+      "paper_bins": 6,
+      "mgp_bins": 6,
+      "total_bins": 12
+    },
+    {
+      "borough": "BKS",
+      "site_type": "DISTRICT",
+      "paper_bins": 9,
+      "mgp_bins": 9,
+      "total_bins": 18
+    },
+    {
+      "borough": "BX",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BX",
+      "site_type": "PARK",
+      "paper_bins": 3,
+      "mgp_bins": 3,
+      "total_bins": 6
+    },
+    {
+      "borough": "BX",
+      "site_type": "PARK",
+      "paper_bins": 7,
+      "mgp_bins": 8,
+      "total_bins": 15
+    },
+    {
+      "borough": "BX",
+      "site_type": "DISTRICT",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BX",
+      "site_type": "NON-PROFIT",
+      "paper_bins": 3,
+      "mgp_bins": 3,
+      "total_bins": 6
+    },
+    {
+      "borough": "BX",
+      "site_type": "ZOO",
+      "paper_bins": 24,
+      "mgp_bins": 24,
+      "total_bins": 48
+    },
+    {
+      "borough": "BX",
+      "site_type": "ZOO",
+      "paper_bins": 36,
+      "mgp_bins": 36,
+      "total_bins": 72
+    },
+    {
+      "borough": "BX",
+      "site_type": "ZOO",
+      "paper_bins": 46,
+      "mgp_bins": 46,
+      "total_bins": 92
+    },
+    {
+      "borough": "BX",
+      "site_type": "NON-PROFIT",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BX",
+      "site_type": "SCHOOL",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BX",
+      "site_type": "PARK",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "BX",
+      "site_type": "SCHOOL",
+      "paper_bins": 24,
+      "mgp_bins": 24,
+      "total_bins": 48
+    },
+    {
+      "borough": "BX",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BX",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BX",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "BX",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "MAN",
+      "site_type": "CITY AGENCY",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "MAN",
+      "site_type": "CITY AGENCY",
+      "paper_bins": 6,
+      "mgp_bins": 6,
+      "total_bins": 12
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 40,
+      "mgp_bins": 40,
+      "total_bins": 80
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 1,
+      "total_bins": 1
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 1,
+      "total_bins": 1
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 1,
+      "total_bins": 1
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 1,
+      "total_bins": 1
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 1,
+      "total_bins": 1
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 3,
+      "total_bins": 3
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 24,
+      "total_bins": 24
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 1,
+      "total_bins": 1
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 1,
+      "total_bins": 1
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 0,
+      "mgp_bins": 1,
+      "total_bins": 1
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 6,
+      "mgp_bins": 6,
+      "total_bins": 12
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 12,
+      "mgp_bins": 12,
+      "total_bins": 24
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 42,
+      "mgp_bins": 42,
+      "total_bins": 84
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "MAN",
+      "site_type": "PARK",
+      "paper_bins": 4,
+      "mgp_bins": 4,
+      "total_bins": 8
+    },
+    {
+      "borough": "QE",
+      "site_type": "NON-PROFIT",
+      "paper_bins": 10,
+      "mgp_bins": 10,
+      "total_bins": 20
+    },
+    {
+      "borough": "QE",
+      "site_type": "SCHOOL",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QE",
+      "site_type": "SCHOOL",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QE",
+      "site_type": "SCHOOL",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 0,
+      "total_bins": 1
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 0,
+      "total_bins": 1
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QE",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QW",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QW",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QW",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QW",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QW",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "QW",
+      "site_type": "ZOO",
+      "paper_bins": 5,
+      "mgp_bins": 5,
+      "total_bins": 10
+    },
+    {
+      "borough": "QW",
+      "site_type": "PARK",
+      "paper_bins": 7,
+      "mgp_bins": 7,
+      "total_bins": 14
+    },
+    {
+      "borough": "QW",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "SI",
+      "site_type": "NON-PROFIT",
+      "paper_bins": 4,
+      "mgp_bins": 4,
+      "total_bins": 8
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "DISTRICT",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "DISTRICT",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 2,
+      "mgp_bins": 2,
+      "total_bins": 4
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 5,
+      "mgp_bins": 6,
+      "total_bins": 11
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 8,
+      "mgp_bins": 8,
+      "total_bins": 16
+    },
+    {
+      "borough": "SI",
+      "site_type": "SCHOOL",
+      "paper_bins": 10,
+      "mgp_bins": 10,
+      "total_bins": 20
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 1,
+      "mgp_bins": 1,
+      "total_bins": 2
+    },
+    {
+      "borough": "SI",
+      "site_type": "PARK",
+      "paper_bins": 5,
+      "mgp_bins": 5,
+      "total_bins": 10
+    }
+  ]
