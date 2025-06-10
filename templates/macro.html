@@ -36,6 +36,80 @@
     <div id="mapContainer" class="text-center">
       {% include 'NY_Boroughs.svg' %}
     </div>
+    <script>
+      const pythonDict = {{ data | tojson }};
+
+  let borough_elements = {
+    "QE": document.getElementsByClassName("Queens"),
+    "BX": document.getElementsByClassName("Bronx"),
+    "BKN": document.getElementsByClassName("Brooklyn"),
+    "MAN": document.getElementsByClassName("Manhattan"),
+    "SI": document.getElementsByClassName("Staten_Island"),
+  };
+
+  let values = Object.values(pythonDict);
+  let minValue = Math.min(...values)-30;
+  let maxValue = Math.max(...values)+30;
+
+  if (maxValue === minValue) {
+    minValue = 0; 
+    maxValue = 1; 
+  }
+
+
+  for (let boroughKey in borough_elements) {
+    console.log(boroughKey);
+    let elements = borough_elements[boroughKey];
+    console.log(elements);
+
+    let currentValue = pythonDict[boroughKey];
+
+    let normalizedValue = 100-(((currentValue - minValue) / (maxValue - minValue)) * 100);
+
+    normalizedValue = Math.max(0, Math.min(100, normalizedValue));
+
+    console.log(`Original: ${currentValue}, Normalized: ${normalizedValue}`);
+
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.fill = `hsl(271, 100%, ${normalizedValue}%)`;
+    }
+  }
+
+
+
+      // fetch('/static/data/data.json')
+      //   .then(response => response.json())
+      //   .then(data => {
+      //     const maxBins = Math.max(...data.map(d => d.total_bins));
+    
+      //     data.forEach(entry => {
+      //       const { borough, total_bins } = entry;
+      //       const groupElements = document.getElementsByClassName(borough);
+    
+      //       if (groupElements.length === 0) {
+      //         console.warn(`No group found for borough: ${borough}`);
+      //         return;
+      //       }
+    
+      //       const intensity = total_bins / maxBins;
+      //       const red = Math.floor(160 - 80 * intensity);
+      //       const green = Math.floor(100 - 60 * intensity);
+      //       const blue = 200;
+      //       const fillColor = `rgb(${red}, ${green}, ${blue})`;
+    
+      //       Array.from(groupElements).forEach(group => {
+      //         const paths = group.querySelectorAll('path');
+      //         paths.forEach(path => {
+      //           path.setAttribute('fill', fillColor);
+      //           path.setAttribute('title', `${borough}: ${total_bins} bins`);
+      //         });
+      //       });
+      //     });
+      //   })
+      //   .catch(error => {
+      //     console.error('Error loading recycling data:', error);
+      //   });
+    </script>
 
     <div class="mt-4">
       <h3>Key Takeaways</h3>
@@ -47,42 +121,7 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    fetch('/static/data/data.json')
-      .then(response => response.json())
-      .then(data => {
-        const maxBins = Math.max(...data.map(d => d.total_bins));
-  
-        data.forEach(entry => {
-          const { borough, total_bins } = entry;
-          const groupElements = document.getElementsByClassName(borough);
-  
-          if (groupElements.length === 0) {
-            console.warn(`No group found for borough: ${borough}`);
-            return;
-          }
-  
-          const intensity = total_bins / maxBins;
-          const red = Math.floor(160 - 80 * intensity);
-          const green = Math.floor(100 - 60 * intensity);
-          const blue = 200;
-          const fillColor = `rgb(${red}, ${green}, ${blue})`;
-  
-          Array.from(groupElements).forEach(group => {
-            const paths = group.querySelectorAll('path');
-            paths.forEach(path => {
-              path.setAttribute('fill', fillColor);
-              path.setAttribute('title', `${borough}: ${total_bins} bins`);
-            });
-          });
-        });
-      })
-      .catch(error => {
-        console.error('Error loading recycling data:', error);
-      });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script> 
   
 </body>
 </html>

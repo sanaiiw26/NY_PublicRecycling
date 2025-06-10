@@ -12,7 +12,25 @@ def home():
 
 @app.route('/macro')
 def macro():
-    return render_template('macro.html', data=recycling_data)
+    site_data = {}
+
+    for entry in recycling_data:
+        entry_borough = entry["borough"]
+        print(entry_borough)
+        if entry_borough not in site_data:
+            site_data[entry_borough] = entry["total_bins"]
+        else:
+            site_data[entry_borough] += entry["total_bins"]
+
+    site_data["BKN"] += site_data["BKS"]
+    site_data["QE"] += site_data["QW"]
+
+    del site_data["BKS"]
+    del site_data["QW"]
+
+    print(site_data)
+
+    return render_template('macro.html', data=site_data)
 
 @app.route('/about') 
 def about():
