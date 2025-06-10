@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sanaii W - Public Recycling in NYC</title>
+  <title>Sanaii W - Public Recycling in NY</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
@@ -17,7 +17,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">NYC Recycling Project</a>
+      <a class="navbar-brand" href="/">NY Recycling Project</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" aria-controls="navbarNav" 
               aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/macro">Macro View</a></li>
+          <li class="nav-item"><a class="nav-link" href="/macro">Map View</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Borough Data
@@ -46,37 +46,45 @@
 
   <!-- Page Heading -->
   <div class="container mt-4">
-    <h1 class="mb-3">Sanaii W – Public Recycling in NYC</h1>
+    <h1 class="mb-3">Sanaii W – Public Recycling in NY</h1>
     <p>
-      Public recycling in a city like NYC can be hard, but it is totally possible!
-      My data will be used to investigate the amount of public recycling bins there are
-      spread throughout the five boroughs of New York to understand the extent to which
-      public recycling is considered important, and where most public recycling bins can be found.
+      Public recycling in a city like New York can be challenging, but it’s definitely possible.
+      This project investigates the number and distribution of public recycling bins across the five 
+      boroughs to better understand how seriously public recycling is taken—and where it's most accessible.
     </p>
 
     <!-- Feedback -->
     <h3 class="mt-5">Feedback</h3>
     <ul>
-      <li>Use an efficient monochromatic color scheme for the different bar graphs.</li>
+      <li>Use an efficient monochromatic color scheme for the New York map.</li>
       <li>Order the bar graphs by increasing amounts to improve readability.</li>
-      <li>Add a key/legend to the macro page for borough color codes.</li>
+      <li>Add a key/legend to bar charts for paper, MGP, and total bins.</li>
     </ul>
 
     <!-- Demo Images -->
-    <h3 class="mt-5">Demo Visuals</h3>
+    <h3 class="mt-5">Prototype Visuals</h3>
     <div class="row">
       <div class="col-md-6">
         <img src="{{ url_for('static', filename='NYC_BarChart_Demo.jpg') }}" class="img-fluid rounded" alt="Bar Chart Demo">
-        <p class="text-center mt-2">Bar Chart Demo</p>
+        <p class="text-center mt-2">Bar Chart Prototype</p>
       </div>
       <div class="col-md-6">
         <img src="{{ url_for('static', filename='NYC_Map_Demo.jpg') }}" class="img-fluid rounded" alt="Map Demo">
-        <p class="text-center mt-2">Map Visualization Demo</p>
+        <p class="text-center mt-2">Map Visualization Prototype</p>
       </div>
     </div>
   </div>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="mt-5">
+    <p>
+      Sources: 
+      <a href="https://data.cityofnewyork.us/Environment/Public-Recycling-Bins/sxx4-xhzg/about_data" target="_blank" rel="noopener noreferrer">
+        NYC Open Data – DSNY Public Recycling Bins
+      </a>
+    </p>
+    <p>Project by Sanaii Wilks</p>
+  </footer>
 </body>
 </html>
